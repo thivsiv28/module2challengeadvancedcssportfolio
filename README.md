@@ -1,5 +1,5 @@
 # module2challengeadvancedcssportfolio
-## Advanced Css: Portfolio
+## Advanced CSS: Portfolio
 
 This week I had to build a portfolio page to which I would be adding to throughout the course duration.
 
@@ -11,12 +11,18 @@ Some criteria that were necessary to deploy a portfolio were:
 
 - My name, a photo or avatar, and links to sections about myself, my work and how to contact me were included
 - Clicking navigation links made the ui scroll to the corresponding section
-- clicking on link about my work , made us scroll to section with titled image of devlopers application
--the first application image is larger in size compared to others
+- Clicking on link about my work , made us scroll to section with titled image of devlopers application
+- The first application image is larger in size compared to others
 clicking on images of the applications, takes to the deployed application and when resizing the page or viewing on various screens and devices you get responsive layout that adapts
 
-Mock up: 
-Attached here is picture of what the site looks like
+### Mock up: 
 
-Link to deployed application here: 
+The following image demonstrates the web application's appearance:
+
+![screenshotofwebpage.](./assets/images/thivsiv28.github.io_module2challengeadvancedcssportfolio_%20(1).png)
+
+
+### Link to deployed application here: 
+
+https://thivsiv28.github.io/module2challengeadvancedcssportfolio/
 
