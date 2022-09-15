@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    background-color:bisque;
+    padding: 20px;
+  }
+
+  nav {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    background-color:bisque;
+  }
+
+ nav li {
+  list-style-type: none;
+  display: inline-block;
+ }
+
+header nav {
+  margin : 20px;
+}
+
+  nav a {
+    color:black;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .main {
+    /* max-width: 1000px; */
+    margin:auto;
+  
+  }
+
+  .myapplications {
+    /* Turns this element into a flexbox */
+    padding: 30px 0;
+    display: flex;
+    flex-wrap:wrap;
+    /* Forces elements to the next line if they don't fit */
+    justify-content: space-between;
+   background-color:#490707;
+    /* justify-content: flex-end; */
+  }
+  
+  .card {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    /* flex: 1 1 0px; */
+    /* width: 70%; */
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  h1 {
+    color: aliceblue;
+  }
+
+  .bio {
+    font-weight: bolder;
+    text-align: center;
+  }
+  .card:first-child {
+    width: 100%;
+  }
+  
+  .card:not(:first-child) {
+    flex: 1;
+  }
+  
+  .myapplications h2 {
+    color:chocolate;
+  }
+  
+  /* .applicationsrow {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  } */
+
+  
+  header {
+    display: flex;
+    /* Defines how to distribute the empty space between child elements */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #13293d;
+   
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  footer li {
+    list-style-type: none;
+  }
+  
+
+
+
+  /* .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+
+  /* .card:first-child {
+    width: 200%;
+  }
+  
+  .card:not(:first-child) {
+    flex: 1;
+  } */
+  
+  .card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  /* .hero-project {
+    /* With a flex-grow value of 2, this element grows twice as wide as others */
+    /* The second value, flex-shrink, defines how the element will shrink if it can't fit*/
+    /*flex: 4 1 200px;  
+    
+    
+    width: 1000px;
+    justify-content: center;
+  }
+  
+  .sub-project {
+    max-width: 400px; */
+
+  
+  /* @media screen and (max-width: 768px) { 
+    main, nav {
+      flex-direction: column;
+      background:#490707;
+    }
+
+    header {
+      background:#0077e7; }
+
+      aside {
+        order: 2;
+      }
+
+      nav,footer {
+        background-color:aqua;
+      } */
