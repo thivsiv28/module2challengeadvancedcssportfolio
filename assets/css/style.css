@@ -16,6 +16,11 @@
     background-color:bisque;
   }
 
+  .nav-effects a:hover {
+    color:rgb(18, 74, 122);
+    font-weight: bold;
+  }
+
  nav li {
   list-style-type: none;
   display: inline-block;
