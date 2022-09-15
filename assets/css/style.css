@@ -1,14 +1,26 @@
+/*universal selector*/
 
 * {
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial;
-    background-color:bisque;
-    padding: 20px;
+  /*element selectors*/
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #13293d;
   }
 
+  header nav {
+    margin : 20px;
+  }
+
+  h1 {
+    color: aliceblue;
+  }
+  
   nav {
     position: relative;
     text-align: center;
@@ -16,89 +28,21 @@
     background-color:bisque;
   }
 
-  .nav-effects a:hover {
-    color:rgb(18, 74, 122);
-    font-weight: bold;
-  }
-
- nav li {
-  list-style-type: none;
-  display: inline-block;
- }
-
-header nav {
-  margin : 20px;
-}
-
   nav a {
     color:black;
     padding: 14px 20px;
     text-decoration: none;
   }
   
-  .main {
-    /* max-width: 1000px; */
-    margin:auto;
-  
-  }
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+   }
 
-  .myapplications {
-    /* Turns this element into a flexbox */
-    padding: 30px 0;
-    display: flex;
-    flex-wrap:wrap;
-    /* Forces elements to the next line if they don't fit */
-    justify-content: space-between;
-   background-color:#490707;
-    /* justify-content: flex-end; */
-  }
-  
-  .card {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    /* flex: 1 1 0px; */
-    /* width: 70%; */
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    
-  }
-  
-  h1 {
-    color: aliceblue;
-  }
-
-  .bio {
-    font-weight: bolder;
-    text-align: center;
-  }
-  .card:first-child {
-    width: 100%;
-  }
-  
-  .card:not(:first-child) {
-    flex: 1;
-  }
-  
-  .myapplications h2 {
-    color:chocolate;
-  }
-  
-  /* .applicationsrow {
-    width: 80%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-  } */
-
-  
-  header {
-    display: flex;
-    /* Defines how to distribute the empty space between child elements */
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #13293d;
-   
+  body {
+    font-family: Arial;
+    background-color:rgb(184, 11, 140);
+    padding: 20px;
   }
   
   footer {
@@ -109,50 +53,56 @@ header nav {
     list-style-type: none;
   }
   
-
-
-
-  /* .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
-
-  /* .card:first-child {
-    width: 200%;
+  
+  .bio {
+    font-weight: bolder;
+    text-align: center;
   }
   
-  .card:not(:first-child) {
-    flex: 1;
-  } */
-  
+/*class selectors*/
+
+  .card {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
   .card header {
     padding: 20px;
     background: #13293d;
     color: #fff;
   }
   
-  /* .hero-project {
-    /* With a flex-grow value of 2, this element grows twice as wide as others */
-    /* The second value, flex-shrink, defines how the element will shrink if it can't fit*/
-    /*flex: 4 1 200px;  
-    
-    
-    width: 1000px;
-    justify-content: center;
+
+  .card:first-child {
+    width: 100%;
   }
   
-  .sub-project {
-    max-width: 400px; */
+  .card:not(:first-child) {
+    flex: 1;
+  }
 
+  .main {
+    margin:auto;
+  }
+
+  .myapplications {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   background-color:#cfbc0d;
+  }
   
-  /* @media screen and (max-width: 768px) { 
+  .myapplications h2 {
+    color:rgb(16, 33, 192);
+  }
+  .nav-effects a:hover {
+    color:rgb(18, 74, 122);
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) { 
     main, nav {
       flex-direction: column;
       background:#490707;
@@ -167,4 +117,5 @@ header nav {
 
       nav,footer {
         background-color:aqua;
-      } */
+      };
+    }
